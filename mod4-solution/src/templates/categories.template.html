@@ -1,0 +1,16 @@
+<table class="table table-sm table-striped " >
+  <thead>
+    <tr>
+      <td>Name</td>
+      <td>Short Name</td>
+
+      </tr>
+    </thead>
+    <tbody>
+      <tr ng-repeat="item in $ctrl.items">
+        <td><a ui-sref="categories.menuItems({catId: item.short_name})"> {{ item.name }}</a></td>
+        <td>({{ item.short_name }})</td>
+        
+        </tr>
+    </tbody>
+    </table>
