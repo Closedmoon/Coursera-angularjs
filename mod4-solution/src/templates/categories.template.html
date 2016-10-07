@@ -8,7 +8,7 @@
     </thead>
     <tbody>
       <tr ng-repeat="item in $ctrl.items">
-        <td><a ui-sref="categories.menuItems({catId: item.short_name})"> {{ item.name }}</a></td>
+        <td><a ui-sref="menuItems({catId: item.short_name})"> {{ item.name }}</a></td>
         <td>({{ item.short_name }})</td>
         
         </tr>
